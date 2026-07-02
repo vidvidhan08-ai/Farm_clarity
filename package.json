@@ -1,0 +1,21 @@
+{
+  "name": "farm-profit-clarity",
+  "version": "2.0.0",
+  "description": "Private farm profitability portal with restricted login, file uploads, saved reports, and PDF export — Express + SQLite backend.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "set-password": "node server/set-password.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "express": "^4.22.2",
+    "express-session": "^1.19.0",
+    "multer": "^2.2.0",
+    "pdfkit": "^0.19.1"
+  }
+}
